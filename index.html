@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Forge Gym</title>
+    <link rel="stylesheet" href="gym web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Iron Forge Gym</h1>
+        <ul>
+            <li><a href="#heros">Home</a></li>
+            <li><a href="#abouts">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    
+    <section id="heros" class="hero hidden">
+        <h2>Transform Your Body. Transform Your Life.</h2>
+        <p>Join Bhubaneswar’s most results-driven gym with expert trainers and modern equipment.</p>
+        <a href="#contacts">
+            <button>Start Your Journey</button>
+        </a>
+    </section>
+    
+
+    <!--About-->
+    
+    <section id="abouts" class="about hidden">
+        <h2>About Us</h2>
+        <p>
+        At Iron Forge Gym, we believe fitness is not just about lifting weights — it's about building discipline, confidence, and a stronger mindset.
+        </p>
+
+        <p>
+        Our mission is to help you achieve your dream physique with the right guidance, environment, and support.
+        </p>
+        <a href="#contacts">
+            <button id="btn">Join Now</button>
+        </a>
+    </section>
+   
+
+    <!--Services-->
+    
+    <section id="services" class="services hidden">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="toggleCard(this)">
+                <h3>Personal Training</h3>
+                <p class="card-decs">
+                    One-on-one coaching tailored to your fitness goals.
+                </p>
+            </div>
+            <div class="service-card" onclick="toggleCard(this)">
+                <h3>Weighting Training</h3>
+                <p class="card-decs">
+                    Build muscle and strength with structured programs.
+                </p>
+            </div>
+            <div class="service-card" onclick="toggleCard(this)">
+                <h3>CrossFit</h3>
+                <p class="card-decs">
+                    High-intensity workouts to boost endurance and power.
+                </p>
+            </div>
+            <div class="service-card" onclick="toggleCard(this)">
+                <h3>Diet Plans</h3>
+                <p class="card-decs">
+                    Customized nutrition plans for your fitness goals.
+                </p>
+            </div>
+        </div>
+        <a href="#contacts">
+            <button id="btn">Join Now</button>
+        </a>
+    </section>
+
+
+    <!--Why-->
+
+    <section id="ids" class="why hidden">
+        <h2>Why Choose Us?</h2>
+        <div class="why-grid">
+            <div class="why-card" onclick="toggleCard(this)">
+                <h3>🏋️‍♂️ Expert Trainers</h3>
+                <p class="card-decs">
+                    Our certified trainers guide you with proper techniques and personalized plans.
+                </p>
+            </div>
+            <div class="why-card" onclick="toggleCard(this)">
+                <h3>🔥 Modern Equipment</h3>
+                <p class="card-decs">
+                    Train with high-quality equipment designed for performance and safety.
+                </p>
+            </div>
+            <div class="why-card" onclick="toggleCard(this)">
+                <h3>💪 Personalized Plans</h3>
+                <p class="card-decs">
+                    Every member gets a plan tailored to their body and goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contact-->
+    
+    <section id="contacts" class="contact hidden">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/maybekundan22@gmail.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone No.">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+   
+    <section class="testimonials hidden">
+        <h2>What Our Members Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Best gym ever! I gained 10kg muscle."</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <h4>- Rahul</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Amazing trainers and great vibe."</p>
+                <p>⭐⭐⭐⭐</p>
+                <h4>- Aman</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Lost 8kg in 3 months. Highly recommend!"</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <h4>- Priya</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Clean environment and top equipment."</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <h4>- Karan</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"The trainers actually care about your progress."</p>
+                <p>⭐⭐⭐⭐</p>
+                <h4>- Sneha</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta hidden">
+        <h2>Ready to Transform Your Body?</h2>
+        <p>Join Iron Forge Gym today and start your journey.</p>
+        <a href="#contacts">
+            <button id="btn">Join Now</button>
+        </a>
+    </section>
+
+
+    <footer>
+        <h3>Iron Forge Gym</h3>
+        <p>Built for strength. Built for you.</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="gym web.js"></script>
+</body>
+</html>
