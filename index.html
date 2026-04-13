@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Forge Gym</title>
     <link rel="stylesheet" href="gym web.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -41,7 +41,7 @@
         Our mission is to help you achieve your dream physique with the right guidance, environment, and support.
         </p>
         <a href="#contacts">
-            <button id="btn">Join Now</button>
+            <button class="btn">Join Now</button>
         </a>
     </section>
    
@@ -77,7 +77,7 @@
             </div>
         </div>
         <a href="#contacts">
-            <button id="btn">Join Now</button>
+            <button class="btn">Join Now</button>
         </a>
     </section>
 
@@ -120,6 +120,21 @@
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h3>500+</h3>
+            <p>Members</p>
+        </div class="stat">
+        <div class="stat">
+            <h3>10+</h3>
+            <p>Expert Trainers</p>
+        </div>
+        <div class="stat">
+            <h3>5★</h3>
+            <p>Rated</p>
+        </div>
     </section>
 
 
@@ -165,7 +180,7 @@
         <h2>Ready to Transform Your Body?</h2>
         <p>Join Iron Forge Gym today and start your journey.</p>
         <a href="#contacts">
-            <button id="btn">Join Now</button>
+            <button class="btn" onclick="document.getElementById(`contacts).scrollIntoView()">Join Now</button>
         </a>
     </section>
 
@@ -178,4 +193,5 @@
 
     <script src="gym web.js"></script>
 </body>
+
 </html>

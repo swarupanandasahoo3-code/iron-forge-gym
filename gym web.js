@@ -17,6 +17,8 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add(`show`);
+        } else {
+            entry.target.classList.remove(`show`);
         }
     });
 });
@@ -24,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
 hiddenElements.forEach((el) => observer.observe(el));
 
 function toggleCard(card){
-    let allCards = document.querySelectorAll(`.service-card`, `.why-card`);
+    let allCards = document.querySelectorAll(`.service-card, .why-card`);
 
     allCards.forEach(c => {
         if(c != card){
